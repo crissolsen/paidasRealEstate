@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+ head
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  //- Bootstrap CSS
+  link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+  title #{ title }
+  style.
+    body {
+        background: gray;
+    }  
+   .top-logo {
+       position: fixed;
+   }
+
+   .main-logo {
+       height: 12vh;
+   }
+
+   @media (max-width: 573px) {
+       .main-logo {
+           height: 10vh;
+       }
+   }
+
+ body
+  .container-fluid.top-logo
+   nav(class= "navbar col-12 col-lg-5 p-sm-0")
+    a(href="#" class= "d-block mx-auto mt-md-3")
+     img(class="main-logo" src="https://res.cloudinary.com/dvwsiufhl/image/upload/f_auto,q_auto,e_shadow,x_8,y_8,co_black/v1602237312/logoPlaceHolder_hxon0o.png")
+
+  
+    
